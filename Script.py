@@ -7,11 +7,11 @@ class script(object):
 ✴️𝙏𝙝𝙚𝙣 𝙎𝙚𝙚 𝙈𝙮 𝙋𝙤𝙬𝙚𝙧𝙨 𝙊𝙣 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥✨️
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
- ©️MᴀɪɴᴛᴀɪɴᴇD Bʏ:<a href=https://t.me/cinemavilla_group >𝐂𝐢𝐧𝐞𝐦𝐚 𝐕𝐢𝐥𝐥𝐚🎬 [𝑴𝒐𝒗𝒊𝒆𝒔 & 𝑺𝒆𝒓𝒊𝒆𝒔]</a> """
+ ©️MᴀɪɴᴛᴀɪɴᴇD Bʏ:<a href=https://t.me/ML_MOVIE_LOKAM >𝐂𝐢𝐧𝐞𝐦𝐚 𝐕𝐢𝐥𝐥𝐚🎬 [Movie Lokam]</a> """
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✮ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
-✮ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/ALANWALKER_TG>ALAN WALKER</a>
+✮ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/Bad_Bunny_444>ᵀʰᵉ вα∂ вυηηу 🇮🇳/🇬🇧</a>
 ✮ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✮ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 ✮ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴: 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
@@ -53,11 +53,11 @@ _𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐌𝐞 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮𝐫 𝐂�
 ➪ /batch ›› <b>To Create Link For Multiple Post.</b>
 ⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
 <code>/batch https://t.me/c/1749754594/332 https://t.me/c/1749754594/336</code>
-<a href=https://t.me/cinemavilla_group >𝐂𝐢𝐧𝐞𝐦𝐚 𝐕𝐢𝐥𝐥𝐚🎬 [𝑴𝒐𝒗𝒊𝒆𝒔 & 𝑺𝒆𝒓𝒊𝒆𝒔]</a>"""
+<a href=https://t.me/ML_MOVIE_LOKAM >Movie Lokam [𝑴𝒐𝒗𝒊𝒆𝒔 & 𝑺𝒆𝒓𝒊𝒆𝒔]</a>"""
     WHOIS_TXT ="""<b>WHOIS MODULE</b>
 Note:- Give a user details
 •/whois :-give a user full details
-𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/cinemavilla_group >𝐂𝐢𝐧𝐞𝐦𝐚 𝐕𝐢𝐥𝐥𝐚🎬 [𝑴𝒐𝒗𝒊𝒆𝒔 & 𝑺𝒆𝒓𝒊𝒆𝒔]</a>"""
+𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/ML_MOVIE_LOKAM >Movie Lokam [𝑴𝒐𝒗𝒊𝒆𝒔 & 𝑺𝒆𝒓𝒊𝒆𝒔]</a>"""
     FUN_TXT ="""<b>Gᴀᴍᴇs</b> 
     
 <b>🎲 NOTHING MUCH JUST SOME FUN THINGS</b>
@@ -87,7 +87,7 @@ Song Download Module, For Those Who Love Music
 <b>🌀Usage🌀</b>
 - Can Be Used By Everyone
 - Works in bot pm
-Made By<a href=https://t.me/cinemavilla_group >𝐂𝐢𝐧𝐞𝐦𝐚 𝐕𝐢𝐥𝐥𝐚🎬 [𝑴𝒐𝒗𝒊𝒆𝒔 & 𝑺𝒆𝒓𝒊𝒆𝒔]</a>"""
+Made By<a href=https://t.me/ML_MOVIE_LOKAM >Movie Lokam[𝑴𝒐𝒗𝒊𝒆𝒔 & 𝑺𝒆𝒓𝒊𝒆𝒔]</a>"""
     PIN_TXT ="""<b>PIN MODULE</b>
 <b>Pin :</b>
 <b>All The Pin Related Commands Can Be Found Here; Keep Your Chat Up To Date On The Latest News With A Simple Pinned Message!</b>
@@ -246,7 +246,7 @@ This module only works for my admins
 𝚃𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚑𝚎𝚕𝚙𝚜 𝚢𝚘𝚞 𝚝𝚘 𝚎𝚍𝚒𝚝 𝚒𝚖𝚊𝚐𝚎 𝚟𝚎𝚛𝚢 𝚎𝚊𝚜𝚒𝚕𝚢 
 ➤ 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐚𝐧𝐝 𝐔𝐬𝐚𝐠𝐞:
 ➪ 𝖩𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 𝖺 𝗂𝗆𝖺𝗀𝖾 𝗍𝗈 𝖾𝖽𝗂𝗍 ✨
-𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/cinemavilla_group >𝐂𝐢𝐧𝐞𝐦𝐚 𝐕𝐢𝐥𝐥𝐚🎬 [𝑴𝒐𝒗𝒊𝒆𝒔 & 𝑺𝒆𝒓𝒊𝒆𝒔]</a>"""
+𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/ML_MOVIE_LOKAM >Movie Lokam [𝑴𝒐𝒗𝒊𝒆𝒔 & 𝑺𝒆𝒓𝒊𝒆𝒔]</a>"""
 
     STICKER_TXT = """𝚈𝙾𝚄 𝙲𝙰𝙽 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙼𝙾𝙳𝚄𝙻𝙴 𝚃𝙾 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈 𝚂𝚃𝙸𝙲𝙺𝙴𝚁𝚂 𝙸𝙳.
 • 𝐔𝐒𝐀𝐆𝐄
