@@ -422,40 +422,62 @@ async def cb_handler(client: Client, query: CallbackQuery):
         files_ = await get_file_details(file_id)
         if not files_:
             return await query.answer('No such file exist.')
-        msg1 = await query.message.reply(
-
-                f'<b>File Name: {title}</b>\n\n'
-
-                f'<b>File Size: {size}</b>\n\n'
-
-                '<code>THis file will be deleted in 5 minutes.!</code>',
-
-                True,
-
-                'html',
-
-                reply_markup=InlineKeyboardMarkup(
-
+        files = files_[0]
+        title = files.file_name
+        size = get_size(files.file_size)
+        f_caption = files.caption
+        if CUSTOM_FILE_CAPTION:
+            try:
+                f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
+                                                       file_size='' if size is None else size,
+                                                       file_caption='' if f_caption is None else f_caption)
+            except Exception as e:
+                logger.exception(e)
+                f_caption = f_caption
+        if f_caption is None:
+            f_caption = f"{title}"
+        await query.answer()
+        await client.send_cached_media(
+            chat_id=query.from_user.id,
+            file_id=file_id,
+            caption=f_caption,
+            protect_content=True if ident == 'checksubp' else False
+        )
+    elif query.data == "removebg":
+        await query.message.edit_text(
+            "**Select required mode**ㅤㅤㅤㅤ",
+            reply_markup=InlineKeyboardMarkup(
+                [[
+                InlineKeyboardButton(text="𝖶𝗂𝗍𝗁 𝖶𝗁𝗂𝗍𝖾 𝖡𝖦", callback_data="rmbgwhite"),
+                InlineKeyboardButton(text="𝖶𝗂𝗍𝗁𝗈𝗎𝗍 𝖡𝖦", callback_data="rmbgplain"),
+                ],[
+                InlineKeyboardButton(text="𝖲𝗍𝗂𝖼𝗄𝖾𝗋", callback_data="rmbgsticker"),
+                ],[
+                InlineKeyboardButton('✶ 𝖡𝖺𝖼𝗄', callback_data='photo')
+             ]]
+        ),)
+    elif query.data == "stick":
+        await query.message.edit(
+            "**Select a Type**",
+            reply_markup=InlineKeyboardMarkup(
+                [
                     [
-
-                        [
-
-                            InlineKeyboardButton('🔥 GET FILE 🔥', url = msg.link)
-
-                        ],
-
-                        [
-
-                            InlineKeyboardButton('Close ❌', callback_data='close')
-
-                        ]
-
-                    ]
-
-                )
-
-            )
-
+                        InlineKeyboardButton(text="𝖭𝗈𝗋𝗆𝖺𝗅", callback_data="stkr"),
+                        InlineKeyboardButton(
+                            text="𝖤𝖽𝗀𝖾 𝖢𝗎𝗋𝗏𝖾𝖽", callback_data="cur_ved"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="𝖢𝗂𝗋𝖼𝗅𝖾", callback_data="circle_sticker"
+                        )
+                    ],
+                    [
+                        InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
+                    ],
+                ]
+            ),
+        )
             await query.answer(Check Out The Chat)
 
             await asyncio.sleep(DELETE_TIME)
