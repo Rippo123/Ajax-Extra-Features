@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('💠 GᏒԾUᎮ 💠', url='https://t.me/cinemavilla_group')
+                InlineKeyboardButton('🧬 GᖇOᑌᑭ 🧬', url='https://t.me/ML_MOVIE_LOKAM')
             ],
             [
-                InlineKeyboardButton('♻️ HΞLᎮ ♻️', url=f"https://t.me/{temp.U_NAME}?start=help")
+                InlineKeyboardButton('🎈 ᕼEᒪᑭ', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -42,15 +42,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕️ ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ ➕️ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 GᏒԾUᎮ 💠', url='https://t.me/cinemavilla_group'),
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/cinemavilla_updates')         
+            InlineKeyboardButton('🧬 GᖇOᑌᑭ 🧬', url='https://t.me/ML_MOVIE_LOKAM'),
+            InlineKeyboardButton('🔰 ᑕᕼᗩᑎᑎEᒪ 🔰', url='https://t.me/ML_MOVIE_LOKAM')         
             ],[
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('🎈 ᕼEᒪᑭ', callback_data='help'),
+            InlineKeyboardButton('😎 ᗩᗷOᑌT', callback_data='about')
             ],[
-            InlineKeyboardButton('💠 SΞΛᏒCH HΞᏒΞ 💠', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔎 SEᗩᖇᑕᕼ ᕼEᖇE 🔍', switch_inline_query_current_chat='')
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -69,7 +69,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🔥 JOIИ CHΛИИΞL 🔥", url=invite_link.invite_link
+                    "🔰 ᒍOIᑎ ᑕᕼᗩᑎᑎEᒪ 🔰", url=invite_link.invite_link
                 )
             ]
         ]
@@ -85,15 +85,15 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕️ ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 GᏒԾUᎮ 💠', url='https://t.me/cinemavilla_group'),
-            InlineKeyboardButton('💠 CHΛИИΞL 💠', url='https://t.me/cinemavilla_updates')         
+            InlineKeyboardButton(🧬 GᖇOᑌᑭ 🧬', url='https://t.me/ML_MOVIE_LOKAM'),
+            InlineKeyboardButton('🔰 ᑕᕼᗩᑎᑎEᒪ 🔰', url='https://t.me/ML_MOVIE_LOKAM')         
             ],[
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('🎈 ᕼEᒪᑭ', callback_data='help'),
+            InlineKeyboardButton('😎 ᗩᗷOᑌT', callback_data='about')
             ],[
-            InlineKeyboardButton('💠 SΞΛᏒCH HΞᏒΞ 💠', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔎 SEᗩᖇᑕᕼ ᕼEᖇE 🔍', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
