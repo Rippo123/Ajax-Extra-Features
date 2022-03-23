@@ -478,100 +478,59 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]
             ),
         )
-            await query.answer(Check Out The Chat)
-
-            await asyncio.sleep(DELETE_TIME)
-
-            await msg1.delete()
-
-            await msg.delete()
-
-            del msg1, msg
-
-        except Exception as e:
-
-            logger.exception(e, exc_info=True)
-
-            await query.answer(f"Encountering Issues", True)
-
-    elif query.data.startswith("checksub"):
-
-        if AUTH_CHANNEL and not await is_subscribed(client, query):
-
-            await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒", show_alert=True)
-
-            return
-
-        ident, file_id = query.data.split("#")
-
-        files_ = await get_file_details(file_id)
-
-        if not files_:
-
-            return await query.answer('No such file exist.')
-
-        files = files_[0]
-
+            files = files_[0]
         title = files.file_name
-
         size = get_size(files.file_size)
-
         f_caption = files.caption
-
         if CUSTOM_FILE_CAPTION:
-
             try:
-
                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
-
                                                        file_size='' if size is None else size,
-
                                                        file_caption='' if f_caption is None else f_caption)
-
             except Exception as e:
-
                 logger.exception(e)
-
                 f_caption = f_caption
-
         if f_caption is None:
-
             f_caption = f"{title}"
-
         await query.answer()
-
         await client.send_cached_media(
-
             chat_id=query.from_user.id,
-
             file_id=file_id,
-
             caption=f_caption,
-
             protect_content=True if ident == 'checksubp' else False
-
         )
-
-    elif query.data == "pages":
-
-        await query.answer()
-
-    elif query.data == "start":
-
-        buttons = [
-    elif query.data == "rotate":
+    elif query.data == "removebg":
         await query.message.edit_text(
-            "**Select the Degree**",
+            "**Select required mode**ㅤㅤㅤㅤ",
+            reply_markup=InlineKeyboardMarkup(
+                [[
+                InlineKeyboardButton(text="𝖶𝗂𝗍𝗁 𝖶𝗁𝗂𝗍𝖾 𝖡𝖦", callback_data="rmbgwhite"),
+                InlineKeyboardButton(text="𝖶𝗂𝗍𝗁𝗈𝗎𝗍 𝖡𝖦", callback_data="rmbgplain"),
+                ],[
+                InlineKeyboardButton(text="𝖲𝗍𝗂𝖼𝗄𝖾𝗋", callback_data="rmbgsticker"),
+                ],[
+                InlineKeyboardButton('✶ 𝖡𝖺𝖼𝗄', callback_data='photo')
+             ]]
+        ),)
+    elif query.data == "stick":
+        await query.message.edit(
+            "**Select a Type**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="180", callback_data="180"),
-                        InlineKeyboardButton(text="90", callback_data="90"),
+                        InlineKeyboardButton(text="𝖭𝗈𝗋𝗆𝖺𝗅", callback_data="stkr"),
+                        InlineKeyboardButton(
+                            text="𝖤𝖽𝗀𝖾 𝖢𝗎𝗋𝗏𝖾𝖽", callback_data="cur_ved"
+                        ),
                     ],
-                    [InlineKeyboardButton(text="270", callback_data="270")],
+                    [
+                        InlineKeyboardButton(
+                            text="𝖢𝗂𝗋𝖼𝗅𝖾", callback_data="circle_sticker"
+                        )
                     ],
                     [
                         InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
+                    ],
                 ]
             ),
         )
