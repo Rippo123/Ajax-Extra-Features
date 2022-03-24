@@ -100,6 +100,7 @@ await asyncio.sleep(1) await m.delete()
  m=await message.reply_sticker("CAACAgUAAxkBAAEO6RtiO7D4w8Paf-xsd4NCdvg8efiU1wACFQEAAsiUZBRmRDCipxVsEyME") 
 await asyncio.sleep(1) await m.delete()
 
+
          )
          return
     data = message.command[1]
