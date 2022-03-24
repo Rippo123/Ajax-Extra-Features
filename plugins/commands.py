@@ -59,9 +59,8 @@ async def start(client, message):
             reply_markup=reply_markup,
             quote=True,
             parse_mode='html'
-
          )
-        return
+         return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
@@ -106,7 +105,7 @@ async def start(client, message):
             parse_mode='html'
 
          )
-        return
+         return
     data = message.command[1]
     try:
         pre, file_id = data.split('_', 1)
