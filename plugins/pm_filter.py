@@ -722,7 +722,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕️ ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🧬 GᖇOᑌᑭ 🧬', url='https://t.me/ML_MOVIE_LOKAM'),
-            InlineKeyboardButton('🔰 ᑕᕼᗩᑎᑎEᒪ 🔰', url='https://t.me/ML_MOVIE_LOKAM')         
             ],[
             InlineKeyboardButton('🎈 ᕼEᒪᑭ', callback_data='help'),
             InlineKeyboardButton('😎 ᗩᗷOT', callback_data='about')
