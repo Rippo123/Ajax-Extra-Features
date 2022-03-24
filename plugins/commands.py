@@ -57,6 +57,7 @@ async def start(client, message):
 await asyncio.sleep(1) await m.delete()
 
 
+
          )
          return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
