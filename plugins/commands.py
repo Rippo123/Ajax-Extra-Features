@@ -54,7 +54,7 @@ async def start(client, message):
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("typing")
- m=await message.reply_sticker("CAACAgUAAxkBAAEO6RtiO7D4w8Paf-xsd4NCdvg8efiU1wACFQEAAsiUZBRmRDCipxVsEyME") 
+ m=await message.reply_sticker("sd4NCdvg8efiU1wACFQEAAsiUZBRmRDCipxVsEyME") 
 await asyncio.sleep(1) await m.delete()
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
