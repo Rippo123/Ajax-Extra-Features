@@ -96,7 +96,6 @@ async def start(client, message):
             InlineKeyboardButton('🔎 SEᗩᖇᑕᕼ ᕼEᖇE 🔍', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        message.reply_chat_action("typing")
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
