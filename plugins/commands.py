@@ -96,7 +96,7 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-        return
+        message.reply_chat_action("typing")
     data = message.command[1]
     try:
         pre, file_id = data.split('_', 1)
