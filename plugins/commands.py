@@ -100,6 +100,7 @@ async def start(client, message):
         await message.reply_chat_action("typing")
  m=await message.reply_sticker("CAACAgUAAxkBAAEO6RtiO7D4w8Paf") 
 await asyncio.sleep(1) await m.delete()
+
          )
         return
     data = message.command[1]
