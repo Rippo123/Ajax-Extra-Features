@@ -56,6 +56,9 @@ async def start(client, message):
         await message.reply_chat_action("typing")
  m=await message.reply_sticker("sd4NCdvg8efiU1wACFQEAAsiUZBRmRDCipxVsEyME") 
 await asyncio.sleep(1) await m.delete()
+
+       )
+       return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
