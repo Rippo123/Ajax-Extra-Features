@@ -82,8 +82,8 @@ async def start(client, message):
             text="**Please Join My Updates Channel to use this Bot!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
-            )
-        return
+         )
+         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
             InlineKeyboardButton('➕️ ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ ➕️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
@@ -102,7 +102,7 @@ async def start(client, message):
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
-        )
+         )
         return
     data = message.command[1]
     try:
