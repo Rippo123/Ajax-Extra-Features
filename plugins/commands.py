@@ -53,13 +53,15 @@ async def start(client, message):
             InlineKeyboardButton('🔎 SEᗩᖇᑕᕼ ᕼEᖇE 🔍', switch_inline_query_current_chat='')
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_chat_action("typing")
- m=await message.reply_sticker ("CAACAgUAAxkBAAEO6RtiO7D4w8Paf")
-await asyncio.sleep(1) await m.delete()
+        await message.reply_video(
+            video="https://telegra.ph/file/fc3b31cdbfbe9fcf16cd9.mp4",
+            caption=Script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            quote=True,
+            parse_mode='html'
 
-
-       )
-       return
+         )
+        return
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
@@ -96,9 +98,12 @@ await asyncio.sleep(1) await m.delete()
             InlineKeyboardButton('🔎 SEᗩᖇᑕᕼ ᕼEᖇE 🔍', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_chat_action("typing")
- m=await message.reply_sticker ("CAACAgUAAxkBAAEO6RtiO7D4w8Paf")
-await asyncio.sleep(1) await m.delete()
+        await message.reply_video(
+            video="https://telegra.ph/file/fc3b31cdbfbe9fcf16cd9.mp4",
+            caption=Script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+            reply_markup=reply_markup,
+            quote=True,
+            parse_mode='html'
 
          )
         return
