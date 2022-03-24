@@ -45,7 +45,6 @@ async def start(client, message):
             InlineKeyboardButton('➕️ ᗩᗪᗪ ᗰE TO YOᑌᖇ GᖇOᑌᑭ ➕️ ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🧬 GᖇOᑌᑭ 🧬', url='https://t.me/ML_MOVIE_LOKAM'),
-            InlineKeyboardButton('🔰 ᑕᕼᗩᑎᑎEᒪ 🔰', url='https://t.me/ML_MOVIE_LOKAM')         
             ],[
             InlineKeyboardButton('🎈 ᕼEᒪᑭ', callback_data='help'),
             InlineKeyboardButton('😎 ᗩᗷOᑌT', callback_data='about')
@@ -53,6 +52,7 @@ async def start(client, message):
             InlineKeyboardButton('🔎 SEᗩᖇᑕᕼ ᕼEᖇE 🔍', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        message.reply_chat_action("typing")
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -101,7 +101,6 @@ async def start(client, message):
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
-
          )
          return
     data = message.command[1]
