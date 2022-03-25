@@ -739,6 +739,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="▣▣▣"
         )  
         reply_markup = InlineKeyboardMarkup(buttons)
+        message.reply_chat_action("typing")
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
