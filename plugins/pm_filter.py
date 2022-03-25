@@ -834,6 +834,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="▣▣▣"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
+        message.reply_chat_action("typing")
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
@@ -889,6 +890,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="▣▣▣"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
+        message.reply_chat_action("typing")
         await query.answer("𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝗆𝗒 𝖧𝖾𝗅𝗉 𝗆𝗈𝖽𝗎𝗅𝖾")
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
@@ -912,6 +914,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="▣▣▣"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
+        message.reply_chat_action("typing")
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
             reply_markup=reply_markup,
