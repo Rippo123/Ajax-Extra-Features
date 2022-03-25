@@ -91,7 +91,7 @@ async def fil_mod(client, message):
           await m.edit("**𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙴𝙽𝙰𝙱𝙻𝙴𝙳**")
       
       elif args in mode_of:
-          FILTER_MODE[str(message.chat.id)]="False"
+          FILTER_MODE[str(message.chat.id)] = "False"
           await m.edit("**𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝙳𝙸𝚂𝙰𝙱𝙻𝙴𝙳**")
       else:
           await m.edit("𝚄𝚂𝙴 :- /autofilter on 𝙾𝚁 /autofilter off")                 
