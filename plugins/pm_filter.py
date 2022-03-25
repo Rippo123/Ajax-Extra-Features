@@ -97,7 +97,7 @@ async def fil_mod(client, message):
       else:
           await m.edit("𝚄𝚂𝙴 :- /autofilter on 𝙾𝚁 /autofilter off")
 
-        n_offset = int(n_offset)
+      
     except:
         n_offset = 0
 
